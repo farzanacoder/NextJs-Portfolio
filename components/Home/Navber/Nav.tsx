@@ -6,9 +6,12 @@ import { AiOutlineDownload } from 'react-icons/ai';
 import { FaCode } from "react-icons/fa";
 import { HiBars3BottomRight } from "react-icons/hi2";
 
+type Props ={
+  openNav: ()=> void
+}
 
+const Nav = ({openNav}:Props) => {
 
-const Nav = () => {
   const [navBg,setNAavBg] = useState(false)
 
   useEffect(()=>{
@@ -47,7 +50,7 @@ const Nav = () => {
                 <AiOutlineDownload className='h-5 w-5' />
                 <span>Download Cv</span>
               </button>
-              <HiBars3BottomRight className='h-8 w-8 cursor-pointer text-white lg:hidden'/>
+              <HiBars3BottomRight onClick={openNav} className='h-8 w-8 cursor-pointer text-white lg:hidden'/>
             </div>
         </div>
     </div>
