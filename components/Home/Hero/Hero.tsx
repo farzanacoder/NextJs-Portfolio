@@ -1,11 +1,14 @@
 'use client'
 import Image from 'next/image'
 import React from 'react'
+import { BsArrowRight } from 'react-icons/bs';
 import Typewriter from 'typewriter-effect';
+import ParticleBg from './ParticleBg';
 
 const Hero = () => {
   return (
-    <div className='relative flex items-center justify-center text-white overflow-hidden flex-col'>
+    <div className='relative flex items-center justify-center text-white overflow-hidden flex-col pt-28'>
+        <ParticleBg/>
         <div className="relative z-10 flex flex-col items-center" >
             <Image height={150} width={150} alt='hero' src='/heroimage.png' className='rounded-full h-[150px] w-[150px] border-8 border-[#0c0c48aa]'/>
             <h1 className='text-2xl sm:text-4xl md:text-6xl mt-6 text-center font-bold'>Creating web products,<br />brands,<span className='text-cyan-200'> and experiences.</span></h1>
@@ -24,6 +27,11 @@ const Hero = () => {
 
                 </span>
             </h2>
+
+            <button className='mt-6 px-10 py-4 bg-blue-800 hover:bg-blue-900 transition-all duration-300 cursor-pointer rounded-full text-lg font-medium'>
+                <span>See my work</span>
+                <BsArrowRight className='h-5 w-5 ml-2 inline-block' />
+            </button>
         </div>
     </div>
   )
