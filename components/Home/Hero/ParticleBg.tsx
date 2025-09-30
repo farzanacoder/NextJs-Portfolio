@@ -1,9 +1,9 @@
 'use client'
-import React, { useMemo } from 'react'
-import { useCallback, useEffect, useState } from "react";
+import React from 'react'
+import { useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
-import { Container, ISourceOptions, MoveDirection, OutMode } from '@tsparticles/engine';
+import { Container, MoveDirection, OutMode } from '@tsparticles/engine';
 
 const ParticleBg = () => {
     const [ init, setInit ] = useState(false);
