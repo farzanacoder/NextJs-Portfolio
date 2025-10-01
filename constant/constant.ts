@@ -5,32 +5,32 @@ export const Navlinks = [
         label: 'Home',
     },
     {
-        id: 1,
+        id: 2,
         url: '#',
         label: 'Services',
     },
     {
-        id: 1,
+        id: 3,
         url: '#',
         label: 'Resume',
     },
     {
-        id: 1,
+        id: 4,
         url: '#',
         label: 'Works',
     },
     {
-        id: 1,
+        id: 5,
         url: '#',
         label: 'Skills',
     },
     {
-        id: 1,
+        id: 6,
         url: '#',
         label: 'Testimonials',
     },
     {
-        id: 1,
+        id: 7,
         url: '#',
         label: 'Conatct',
     },
