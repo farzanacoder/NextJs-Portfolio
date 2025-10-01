@@ -1,0 +1,64 @@
+'use client'
+import React from 'react'
+import { SiJavascript, SiNextdotjs, SiNodedotjs, SiReact, SiTailwindcss, SiTypescript } from 'react-icons/si'
+import Tilt from 'react-parallax-tilt'
+
+const Skils =[
+    {
+        name: 'JavaScript',
+        icon: <SiJavascript/>,
+        percentage: 89,
+    },
+    {
+        name: 'React.js',
+        icon: <SiReact/>,
+        percentage: 92,
+    },
+    {
+        name: 'Next.js',
+        icon: <SiNextdotjs/>,
+        percentage: 90,
+    },
+    {
+        name: 'Node.js',
+        icon: <SiNodedotjs/>,
+        percentage: 88,
+    },
+    {
+        name: 'Tailwindcss',
+        icon: <SiTailwindcss/>,
+        percentage: 94,
+    },
+    {
+        name: 'TypeScript',
+        icon: <SiTypescript/>,
+        percentage: 86,
+    },
+]
+
+const Skills = () => {
+  return (
+    <div className='py-16'>
+        <h1 className='text-3xl text-center sm:text-4xl font-bold text-white'>
+          My  <span className='text-cyan-200'>Skills</span>
+       </h1>
+       <div className='flex flex-wrap justify-center gap-6 mt-16'>
+        {
+            Skils.map((item)=>{
+                return (
+                    <Tilt key={item.name} scale={1.5} transitionSpeed={400}>
+                        <div className='bg-[#14134145] text-center h-48 rounded-3xl flex flex-col items-center justify-center w-40 shadow-lg transition hover:scale-105'>
+                            <div className='text-5xl mb-4 text-gray-300 '>{item.icon}</div>
+                            <div className='text-2xl font-semibold '>{item.percentage}%</div>
+                            <div className='mt-1 text-purple-400 '>{item.name}</div>
+                        </div>
+                    </Tilt>
+                )
+            })
+        }
+       </div>
+    </div>
+  )
+}
+
+export default Skills
