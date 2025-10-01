@@ -20,7 +20,6 @@ const Home = () => {
       <Client/>
       <Blog/>
       <Contact/>
-      <Footer/>
     </div>
   )
 }

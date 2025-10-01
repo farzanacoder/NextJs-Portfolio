@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import ReasponsiveNav from "@/components/Home/Navber/ReasponsiveNav";
+import Footer from "@/components/Home/Footer/Footer";
+import ScrolToTop from "@/components/Helper/ScrolToTop";
 
 const font= Inter ({
   weight: ['100' ,'200' ,'300' ,'400' ,'500' ,'600' ,'700' ,'800' , '900'],
@@ -25,6 +27,8 @@ export default function RootLayout({
       >
         <ReasponsiveNav/>
         {children}
+        <Footer/>
+        <ScrolToTop/>
       </body>
     </html>
   );
