@@ -1,6 +1,6 @@
 import React from 'react'
 import { BiEnvelope, BiMap, BiPhone } from 'react-icons/bi'
-import { FaFacebook, FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
+import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
 
 const Contact = () => {
   return (
