@@ -44,10 +44,10 @@ const Skills = () => {
        </h1>
        <div className='flex flex-wrap justify-center gap-6 mt-16'>
         {
-            Skils.map((item)=>{
+            Skils.map((item,index)=>{
                 return (
                     <Tilt key={item.name} scale={1.5} transitionSpeed={400}>
-                        <div className='bg-[#14134145] text-center h-48 rounded-3xl flex flex-col items-center justify-center w-40 shadow-lg transition hover:scale-105'>
+                        <div data-aos='flip-right' data-aos-delay={index*100} data-aos-anchor-placement='top-center' className='bg-[#14134145] text-center h-48 rounded-3xl flex flex-col items-center justify-center w-40 shadow-lg transition hover:scale-105'>
                             <div className='text-5xl mb-4 text-gray-300 '>{item.icon}</div>
                             <div className='text-2xl font-semibold '>{item.percentage}%</div>
                             <div className='mt-1 text-purple-400 '>{item.name}</div>

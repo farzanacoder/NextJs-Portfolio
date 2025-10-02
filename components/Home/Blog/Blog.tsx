@@ -8,9 +8,15 @@ const Blog = () => {
                 My latest  <span className='text-cyan-200'>Blogs</span>
      </h1>
      <div className="grid grid-cols-1 lg:grid-cols-3 mx-auto gap-10 items-center w-[70%] mt-16">
-            <BlogCard image='/blog.png' title='Learn how to build an amazing portfolio website using next js'/>
-            <BlogCard image='/blog1.png' title='Learn how to build an amazing portfolio website using next js'/>
-            <BlogCard image='/blog2.png' title='Learn how to build an amazing portfolio website using next js'/>
+      <div data-aos='fade-right' data-aos-anchor-placement='top-center'>
+          <BlogCard image='/blog.png' title='Learn how to build an amazing portfolio website using next js'/>
+      </div>
+      <div data-aos='fade-right' data-aos-anchor-placement='top-center' data-aos-delay='100'>
+          <BlogCard image='/blog1.png' title='Learn how to build an amazing portfolio website using next js'/>
+      </div>
+      <div data-aos='fade-right' data-aos-anchor-placement='top-center' data-aos-delay='200'>
+          <BlogCard image='/blog2.png' title='Learn how to build an amazing portfolio website using next js'/>
+      </div>
      </div>
     </div>
   )

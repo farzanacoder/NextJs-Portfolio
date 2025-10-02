@@ -12,7 +12,7 @@ const Resume = () => {
             <h1 className='text-3xl sm:text-4xl font-bold text-white'>
                 My Work <span className='text-cyan-200'>Experience</span>
             </h1>
-            <div className='mt-10'>
+            <div className='mt-10' data-aos='zoom-in' data-aos-anchor-placement='top-center'>
                 <ResumeCard Icon={FaCodepen} role='Front-End Developer'/>
                 <ResumeCard Icon={FaReact} role='Full-Stack Developer'/>
                 <ResumeCard Icon={FaDatabase} role='Backend Developer'/>
@@ -24,7 +24,7 @@ const Resume = () => {
             <h1 className='text-3xl sm:text-4xl font-bold text-white'>
                 My  <span className='text-cyan-200'>Education</span>
             </h1>
-            <div className='mt-10'>
+            <div className='mt-10' data-aos-delay='300' data-aos='zoom-out' data-aos-anchor-placement='top-center'>
                 <ResumeCard Icon={BiBadge} role='Design Institute of Technology' date='Jan 2023 - Dec 2024'/>
                 <ResumeCard Icon={FaReact} role='Bachelor in Computer Science' date='Jan 2023 - Dec 2024'/>
                 <ResumeCard Icon={FaDatabase} role='Certificate in Digital Marketing' date='Jan 2023 - Dec 2024'/>
